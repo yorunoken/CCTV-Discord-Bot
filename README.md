@@ -2,7 +2,7 @@
 
 A Discord bot written in TypeScript that uses the bun runtime. Scrapes random unsecured CCTV cameras.
 
-You can see the bot in action [by inviting it to your server](https://google.com).
+You can see the bot in action [by inviting it to your server](https://discord.com/api/oauth2/authorize?client_id=1158737858660675655&permissions=2048&scope=bot).
 
 <img src="https://cdn.discordapp.com/attachments/1158385900972163174/1158412960184680478/986197.jpg?ex=651c27a3" alt="Jakarta, Indonesia" width="400"/> <img src="https://cdn.discordapp.com/attachments/1158385900972163174/1158416609157849238/876545.jpg" alt="Tokyo, Japan" width="400">
 ## 🚀 Usage
