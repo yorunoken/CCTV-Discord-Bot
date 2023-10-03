@@ -4,10 +4,11 @@ import path from "path";
 import fs from "fs";
 import { cameras_xml } from "./types/cameras_xml";
 import { camera_details } from "./types/camera_details";
+import { websiteUrl } from "./constants";
 
 const parseXml = util.promisify(xml2js.parseString);
 export async function get_cameras() {
-  const xmlData = await fetch("http://www.insecam.org/static/sitemap.xml").then((res) => res.text());
+  const xmlData = await fetch(websiteUrl).then((res) => res.text());
   const jsonXml = (await parseXml(xmlData)) as cameras_xml;
   return jsonXml.urlset.url;
 }
@@ -44,8 +45,6 @@ export async function write_image_to_disk(imageUrl: string, name: string): Promi
 
   try {
     const response = await fetch(imageUrl);
-    console.log(imageUrl);
-    console.log(name);
 
     if (!response.ok) {
       console.error(response.statusText);
