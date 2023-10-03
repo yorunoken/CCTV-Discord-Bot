@@ -13,10 +13,16 @@ You can see the bot in action [by inviting it to your server](https://google.com
 4. Rename the `.local.env.example` file to `.local.env` and add your API credentials in the following format:
 
 ```env
-token=DISCORD_TOKEN
+TOKEN=DISCORD_TOKEN_HERE
 ```
 
 5. Launch the bot by running `bun start`.
+
+## 🖥️ Commands 
+
+```env
+/cameras (replies with a random screenshot of a camera)
+```
 
 ## 🙌 Credits
 
